@@ -1,2 +1,1 @@
 |Index|Application|Identifiant|Mot de passe|
-|1|IUT Paul Sabatier|GBG5539A|GBR26102006//OmegaTetras|
