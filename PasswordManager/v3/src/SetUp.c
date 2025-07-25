@@ -21,7 +21,7 @@ int main(){
 
     printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= SetUp PasswordManager V.3 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
     printf("Bienvenue dans le SetUp de PassWordManager v3!\n");
-    printf("Pour garantir la securite de vos mots de passe, vos données seront chiffrees\n");
+    printf("Pour garantir la securite de vos mots de passe, vos donnees seront chiffrees\n");
     printf("grace a un mot de passe maitre.\n\n");
 
     printf(" - ATTENTION : Ce mot de passe est indispensable pour acceder a vos donnees !\n");
@@ -50,9 +50,7 @@ int main(){
 
     printf("Votre mot de passe est : %s\n\n",MDP1);
     removeEnter(MDP1);
-    FILE *fichierData = fopen("DATA.txt","r+");
-    fichierData = Encrypting(fichierData,MDP1);
-    fclose(fichierData);
+    EncryptingName("DATA.txt",MDP1);
     free(MDP1);
     free(MDP2);
     pause();
