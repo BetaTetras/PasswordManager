@@ -32,21 +32,24 @@ int main(){
     fgets(MDP, 100, stdin);
     removeEnter(MDP);
 
-    UncryptingName("DATA.txt",MDP);
-
     FILE *testRightPWD = fopen("DATA.txt", "r+");
     String Element = (String)calloc(100,sizeof(char));
-    strcpy(Element,strbcpy(getLigne(testRightPWD,0),0,6));
+    strcpy(Element,getLigne(testRightPWD,0));
+    UncryptingOneLigne(Element,MDP);
+    printf("    /// DEBUG : %s\n",Element);
+    strcpy(Element,strbcpy(Element,0,6));
+    printf("    /// DEBUG : %s\n\n",Element);
 
     if(Element == NULL || strcmp(Element, "Index") != 0){
         printf("\n      # Error...\n      # Mauvais mot de passe...\n\n");
-        EncryptingName("DATA.txt",MDP);
         fclose(testRightPWD);
         free(MDP);
         pause();
         return 1;
     }
     fclose(testRightPWD);
+
+    UncryptingName("DATA.txt",MDP);
 
     FILE *fichier = fopen("DATA.txt","r+");
     mainMenu(fichier,MDP);
@@ -133,30 +136,29 @@ void PasswordManager(FILE *fichier){
 
 }
 
-void PlusInformation(){
+void PlusInformation() {
     system("cls");
 
-    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PasswordManager V.1 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
+    printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PasswordManager v3.0 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
 
-    printf("[Plus d'information]\n\n");
+    printf("[ Plus d'informations ]\n\n");
 
-    printf("Createur : Gregoire GIBRAT (BetaTetras)\n");
-    printf("Version  : V3.0\n");
-    printf("Source code : ...\n\n");
+    printf("Createur     : Gregoire GIBRAT (BetaTetras)\n");
+    printf("Version      : v3.0\n");
+    printf("Code source  : https://github.com/BetaTetras/PasswordManager/tree/main/PasswordManager\n\n");
 
     printf("Presentation du projet :\n");
-    printf("PasswordManager repond a un probleme que j'ai moi meme\n");
-    printf("rencontree : le stockage et la recherche de mot de passe !\n");
-    printf("En effet c'est peu pratique de devoir chercher dans la\n");
-    printf("liste interminable de mot de passe qu'on mes en place ...\n");
-    printf("Et c'est a ce moment la que PasswordManager prends le relais !\n");
-    printf("Grace a lui vous pouvez ordonnee vos mots de passe et \n");
-    printf("recuperer vos mots de passe en un instant grace a l'affichage\n");
-    printf("en mode tableau ou en mode liste ou tout simplement en \n");
-    printf("fesans une recherche simple !\n\n\n");
+    printf("PasswordManager repond a un probleme que j'ai moi-même rencontre : le stockage et la gestion de mots de passe.\n");
+    printf("Il n'est pas pratique de devoir fouiller dans une liste interminable de mots de passe stockes un peu partout...\n");
+    printf("C'est la que PasswordManager intervient !\n\n");
+    printf("Grâce a cette application, vous pouvez organiser vos mots de passe, les afficher sous forme de tableau ou de liste, ou encore faire une\n");
+    printf("recherche ciblee pour retrouver rapidement l'information souhaitee.\n\n");
+    printf("Plus besoin de galerer avec des notes eparpillees :\n");
+    printf("PasswordManager centralise tout pour vous, simplement.\n\n");
 
     pause();
 }
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
