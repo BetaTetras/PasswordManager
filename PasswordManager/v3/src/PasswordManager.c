@@ -36,9 +36,7 @@ int main(){
     String Element = (String)calloc(100,sizeof(char));
     strcpy(Element,getLigne(testRightPWD,0));
     UncryptingOneLigne(Element,MDP);
-    printf("    /// DEBUG : %s\n",Element);
     strcpy(Element,strbcpy(Element,0,6));
-    printf("    /// DEBUG : %s\n\n",Element);
 
     if(Element == NULL || strcmp(Element, "Index") != 0){
         printf("\n      # Error...\n      # Mauvais mot de passe...\n\n");
