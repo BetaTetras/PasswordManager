@@ -32,14 +32,16 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
 - N'importe quel PC sous Win 11 *(même une pomme de terre peut faire tourner mon programme)*
 
 #### **Lancement :**
-##### *Pour v1 et v2 :* - ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
+##### *Pour v1 et v2 :*
+![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
 -  Se lance normalement depuis l'exe. Attention cependant à vos antivirus qui peuvent empêcher le lancement de l'application, le code source est à votre disposition pour vérifier son contenu.
 - Si vous avez *gcc* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
 ```bash
   cd C:\[...]\PasswordManager\vX\
   gcc .\DataExplorer.c .\DataExplorer.h .\Tools.c .\Tools.h .\PasswordManager.c -o PasswordManager
 ```
-##### *Pour v3 :* -  ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
+##### *Pour v3 :*
+![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
 - D'abord lancer SetUp.exe qui se trouve ici : `C:\[...]\PasswordManager\v3\bin\SetUp.exe`
 - Puis vous pouvez lancée PWM.exe : `C:\[...]\PasswordManager\v3\bin\PWM.exe` 
 - Si vous avez *gcc* ainsi que *mingw32-make* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
