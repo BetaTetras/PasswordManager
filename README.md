@@ -50,16 +50,16 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
 ##### *Pour v4 :* -  ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic) ![Badge OS](https://img.shields.io/badge/OS%20:-LINUX-blue?style=plastic)
 
 #### Sous **Windows** :
-- Le SetUp.exe a étais fusionnée avec PasswordManager.exe donc il suffit de lancée directement PasswordManager.exe qui est ici :`C:\[...]\PasswordManager\v4\windows\bin\PasswordManager.exe`
+- Le SetUp.exe a étais fusionnée avec PasswordManager.exe donc il suffit de lancer directement PasswordManager.exe qui est ici :`C:\[...]\PasswordManager\v4\windows\bin\PasswordManager.exe`
 - Si vous avez *gcc* ainsi que *mingw32-make* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
 ```bash
   cd C:\[...]\PasswordManager\v4\windows
   mingw32-make
 ```
-- Si l'erreur qui vous indique que le chiffrement n'a pas étais effectuée lors de la dernière utilisation s'affichie il faut utilisée l'executable BackUp.exe qui est ici : `C:\[...]\PasswordManager\v4\windows\bin\BackUp.exe`
+- Si l'erreur qui vous indique que le chiffrement n'a pas étais effectuée lors de la dernière utilisation s'affichie il faut utiliser l'executable BackUp.exe qui est ici : `C:\[...]\PasswordManager\v4\windows\bin\BackUp.exe`
 
 #### Sous **Linux** :
-- Il suffit de lancée PasswordManager qui est ici : `C:\[...]\PasswordManager\v4\linux\bin\BackUp.exe`
+- Il suffit de lancer PasswordManager qui est ici : `C:\[...]\PasswordManager\v4\linux\bin\BackUp.exe`
 - Si vous avez gcc et make sur votre linux, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
 ```bash
   cd C:\[...]\PasswordManager\v4\linux
