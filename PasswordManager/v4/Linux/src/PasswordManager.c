@@ -152,7 +152,7 @@ void PlusInformation() {
     Color_printf_MAGENTA("[ Plus d'informations ]\n\n");
 
     printf("Createur     : Gregoire GIBRAT (BetaTetras)\n");
-    printf("Version      : v3.0\n");
+    printf("Version      : v4.0\n");
     printf("Code source  : https://github.com/BetaTetras/PasswordManager/tree/main/PasswordManager\n\n");
 
     printf("Presentation du projet :\n");
@@ -683,4 +683,5 @@ int SetUp(){
     free(MDP2);
     return 0;
 }
+
 
