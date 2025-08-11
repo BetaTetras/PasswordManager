@@ -1,8 +1,8 @@
 # 🔑 | PasswordManager
 ![Badge Langage](https://img.shields.io/badge/Langage%20:-C-blue?style=plastic)
 ![Badge Licence](https://img.shields.io/badge/Licence%20:-MIT-darkblue?style=plastic)
-![Badge Version](https://img.shields.io/badge/Version%20:-v4-purple?style=plastic)
-![Badge État](https://img.shields.io/badge/État%20%3A-En%20cours...-pink?style=plastic)
+![Badge Version](https://img.shields.io/badge/Version%20:-v4-darkred?style=plastic)
+![Badge État](https://img.shields.io/badge/État%20%3A-En%20cours...-orange?style=plastic)
 
 **PasswordManager** est une application développée en C par Grégoire GIBRAT permettant de gérer, administrer et manipuler sa propre base de données de mots de passe. 
 
