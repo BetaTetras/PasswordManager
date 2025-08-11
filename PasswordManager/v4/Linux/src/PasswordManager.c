@@ -407,7 +407,7 @@ void AjoutCompte(FILE *fichier){
 	String* ListeId = (String*)calloc(500,sizeof(String));
 	ListeId = getListeColonne(fichier,2);
 
-	system("cls");
+	system("clear");
 	printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PasswordManager V.4 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
 
 	Color_printf_MAGENTA("[PasswordManager] -> [Ajouter/Supprimer/Modifier...] -> [Ajout]\n\n");
@@ -683,3 +683,4 @@ int SetUp(){
     free(MDP2);
     return 0;
 }
+
