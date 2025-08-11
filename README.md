@@ -31,27 +31,43 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
 ### Requis :
 - N'importe quel PC sous Win 11 *(même une pomme de terre peut faire tourner mon programme)*
 
-#### **Lancement :**
-##### *Pour v1 et v2 :*
-![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
+### Lancement :
+##### *Pour v1 et v2 :* - ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
 -  Se lance normalement depuis l'exe. Attention cependant à vos antivirus qui peuvent empêcher le lancement de l'application, le code source est à votre disposition pour vérifier son contenu.
 - Si vous avez *gcc* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
 ```bash
   cd C:\[...]\PasswordManager\vX\
   gcc .\DataExplorer.c .\DataExplorer.h .\Tools.c .\Tools.h .\PasswordManager.c -o PasswordManager
 ```
-##### *Pour v3 :*
-![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
+##### *Pour v3 :* -  ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
 - D'abord lancer SetUp.exe qui se trouve ici : `C:\[...]\PasswordManager\v3\bin\SetUp.exe`
-- Puis vous pouvez lancée PWM.exe : `C:\[...]\PasswordManager\v3\bin\PWM.exe` 
+- Puis vous pouvez lancée PasswordManager.exe : `C:\[...]\PasswordManager\v3\bin\PWM.exe` 
 - Si vous avez *gcc* ainsi que *mingw32-make* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
 ```bash
   cd C:\[...]\PasswordManager\vX\
   mingw32-make
 ```
+##### *Pour v4 :* -  ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic) ![Badge OS](https://img.shields.io/badge/OS%20:-LINUX-blue?style=plastic)
+
+#### Sous **Windows** :
+- Le SetUp.exe a étais fusionnée avec PasswordManager.exe donc il suffit de lancée directement PasswordManager.exe qui est ici :`C:\[...]\PasswordManager\v4\windows\bin\PasswordManager.exe`
+- Si vous avez *gcc* ainsi que *mingw32-make* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
+```bash
+  cd C:\[...]\PasswordManager\v4\windows
+  mingw32-make
+```
+- Si l'erreur qui vous indique que le chiffrement n'a pas étais effectuée lors de la dernière utilisation s'affichie il faut utilisée l'executable BackUp.exe qui est ici : `C:\[...]\PasswordManager\v4\windows\bin\BackUp.exe`
+
+#### Sous **Linux** :
+- Il suffit de lancée PasswordManager qui est ici : `C:\[...]\PasswordManager\v4\linux\bin\BackUp.exe`
+- Si vous avez gcc et make sur votre linux, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
+```bash
+  cd C:\[...]\PasswordManager\v4\linux
+  make
+```
 
 **À noter :**
-- *Pour v1 et v2 :* Le fichier DATA.txt **suit un format STRICT**, le modifier à la main peut **provoquer des erreurs** *(comme par exemple avoir plusieurs "\n" à la fin du fichier)*  
+-  Le fichier DATA.txt **suit un format STRICT**, le modifier à la main peut **provoquer des erreurs** *(comme par exemple avoir plusieurs "\n" à la fin du fichier)*  
 - Pour des raisons structurelles, **il ne faut pas utiliser de caractères accentués (éèçàù) ni le caractère pipe ( | )** dans l'application
 
 ## 💡 Remarques 
