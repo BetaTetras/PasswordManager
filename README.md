@@ -66,6 +66,7 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
   cd C:\[...]\PasswordManager\v4\linux
   make
 ```
+- Si l'erreur qui vous indique que le chiffrement n'a pas étais effectuée lors de la dernière utilisation s'affichie il faut utiliser l'executable BackUp.exe qui est ici : `C:\[...]\PasswordManager\v4\linux\bin\BackUp.exe`
 
 **À noter :**
 -  Le fichier DATA.txt **suit un format STRICT**, le modifier à la main peut **provoquer des erreurs** *(comme par exemple avoir plusieurs "\n" à la fin du fichier)*  
