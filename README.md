@@ -87,7 +87,7 @@ Emplacement des sauvergarde : `C:\[...]\PasswordManager\v5\Windows\saves`
 -  Le fichier DATA.txt **suit un format STRICT**, le modifier à la main peut **provoquer des erreurs** *(comme par exemple avoir plusieurs "\n" à la fin du fichier)*  
 - Pour des raisons structurelles, **il ne faut pas utiliser de caractères accentués (éèçàù) ni le caractère pipe ( | )** dans l'application
 
-## 💡 Remarques 
+## 💡 | Remarques 
 **PasswordManager** est une application créée pour apprendre et m'améliorer en C et dans l'algorithmie en général, dans le cadre de mes études en informatique... Donc c'est pas du sérieux les gars.
 
 **ATTENTION** : Le chiffrement / déchifrrement est BUGGE !!! Je la fixerais avec la V6
