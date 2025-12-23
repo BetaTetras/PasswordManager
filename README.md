@@ -112,8 +112,6 @@ Emplacement des sauvergarde : `C:\[...]\PasswordManager\v6\Windows\saves`
 ## 💡 | Remarques 
 **PasswordManager** est une application créée pour apprendre et m'améliorer en C et dans l'algorithmie en général, dans le cadre de mes études en informatique... Donc c'est pas du sérieux les gars.
 
-**ATTENTION** : Le chiffrement / déchifrrement est BUGGE !!! Je la fixerais avec la V6
-
 ## 📜 | Licence
 
 Ce projet est sous licence **MIT** – Vous pouvez faire un peu ce que vous voulez tant que je suis crédité.
