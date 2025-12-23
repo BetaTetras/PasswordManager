@@ -83,12 +83,12 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
 
 - La sauvegarde des bases de données se trouve dans le fichier et ils peuvent étre générée depuis l'application avec l'option concernée
 Emplacement des sauvergarde : `C:\[...]\PasswordManager\v5\Windows\saves`
-##### *Pour V6 :* -  ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic) ![Badge Version](https://img.shields.io/badge/Etat%20:-STABLE-LIM?style=plastic)
+##### *Pour V6 :* -  ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic) ![Badge OS](https://img.shields.io/badge/OS%20:-LINUX-blue?style=plastic) ![Badge Version](https://img.shields.io/badge/Etat%20:-STABLE-LIM?style=plastic) 
 
 #### Sous **Windows** :
 - Si vous avez *gcc* ainsi que *mingw32-make* sur votre Windows, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
 ```bash
-  cd C:\[...]\PasswordManager\v5\Windows
+  cd C:\[...]\PasswordManager\v6\Windows
   mingw32-make
 ```
 - Si l'erreur qui vous indique que le chiffrement n'a pas étais effectuée lors de la dernière utilisation s'affichie il faut utiliser l'executable BackUp.exe qui est ici : `C:\[...]\PasswordManager\v6\Windows\bin\BackUp.exe`
@@ -99,6 +99,15 @@ Emplacement des sauvergarde : `C:\[...]\PasswordManager\v6\Windows\saves`
 **À noter :**
 -  Le fichier DATA.txt **suit un format STRICT**, le modifier à la main peut **provoquer des erreurs** *(comme par exemple avoir plusieurs "\n" à la fin du fichier)*  
 - Pour des raisons structurelles, **il ne faut pas utiliser de caractères accentués (éèçàù) ni le caractère pipe ( | )** dans l'application
+
+#### Sous **Linux** :
+- Il suffit de lancer PasswordManager qui est ici : `C:\[...]\PasswordManager\v6\Linux\bin\PasswordManager`
+- Si vous avez gcc et make sur votre linux, placez-vous dans le dossier de la version souhaitée depuis votre terminal et entrez cette commande pour recompiler le programme afin de s'assurer de son bon fonctionnement :
+```bash
+  cd C:\[...]\PasswordManager\v6\linux
+  make
+```
+- Si l'erreur qui vous indique que le chiffrement n'a pas étais effectuée lors de la dernière utilisation s'affichie il faut utiliser l'executable BackUp.exe qui est ici : `C:\[...]\PasswordManager\v4\Linux\bin\BackUp.exe`
 
 ## 💡 | Remarques 
 **PasswordManager** est une application créée pour apprendre et m'améliorer en C et dans l'algorithmie en général, dans le cadre de mes études en informatique... Donc c'est pas du sérieux les gars.
