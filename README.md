@@ -28,7 +28,7 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
 | **Générateur** de mot de passe fort - *(v2)*                   |
 | **Cryptage** des information - *(v3)*                          |
 | **Sauvegarde** de la base de donnée - *(v5)*                   |
-| ***Chiffrage** coustant, même pendant l'utilisation - *(v6)*   |
+| **Chiffrage** coustant, même pendant l'utilisation - *(v6)*   |
 
 ## ⚙️ | Fonctionnement et déploiement 
 ### Requis :
