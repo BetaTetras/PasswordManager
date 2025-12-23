@@ -32,8 +32,8 @@ Pour faire fonctionner **PasswordManager**, le code utilise deux bibliothèques 
 
 ## ⚙️ | Fonctionnement et déploiement 
 ### Requis :
-- *Version 1 à 6* -  N'importe quel PC sous Win 11 (même une pomme de terre peut faire tourner mon programme)
-- *Version 4* - N'importe quel PC sous n'importe distribution Linux (même une banane de terre peut faire tourner mon programme)
+- *Version 1 à 6* -  N'importe quel PC sous Win 11 (*gcc* et *mingw32-make* conseillée) 
+- *Version 4 et version 6* - N'importe quel PC sous n'importe distribution Linux (*gcc* conseillée) 
 
 ### Lancement :
 ##### *Pour v1 et v2 :* - ![Badge OS](https://img.shields.io/badge/OS%20:-WINDOWS-GREEN?style=plastic)
